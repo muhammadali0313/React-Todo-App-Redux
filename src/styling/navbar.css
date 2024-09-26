@@ -1,0 +1,22 @@
+ 
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transform: perspective(600px) translateZ(0);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .navbar:hover {
+    transform: perspective(600px) translateZ(10px);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.5);
+  }
+  
+  @media (max-width: 600px) {
+    .navbar {
+      font-size: 1.2rem;
+      padding: 0.8rem;
+    }
+  }
